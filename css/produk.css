@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.logo {
+  font-family: "Stardos Stencil", system-ui; 
+  font-weight: 700; 
+  font-style: normal; 
+  font-size: 26px !important; 
+  padding-left: 1vh !important;
+  display: inline-block;
+  color: white;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-item a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-item a:hover {
+  color: #00aaff;
+}
+
+/* Product Detail */
+.product-detail {
+  padding: 120px 5% 60px;
+  background: #fff;
+  color: #000;
+}
+
+.product-detail .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.detail-image img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.detail-info {
+  max-width: 500px;
+}
+
+.detail-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.detail-info .price {
+  font-size: 1.4rem;
+  color: #0084d1;
+  margin: 10px 0;
+}
+
+.detail-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0084d1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: #0069a8;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 0;
+  }
+}
